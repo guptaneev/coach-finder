@@ -1,7 +1,8 @@
-import React from 'react';
 import { ClerkProvider, SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+import { db } from '../../lib/db';
 
-const Page: React.FC = () => {
+const HomePage = async () => {
+  
   return (
     <ClerkProvider>
       <div>
@@ -9,7 +10,7 @@ const Page: React.FC = () => {
           <SignInButton />
         </SignedOut>
         <SignedIn>
-          <SignInButton />
+          <SignOutButton />
           <UserButton />
         </SignedIn>
         <h1>Welcome to Coach Finder</h1>
@@ -20,4 +21,4 @@ const Page: React.FC = () => {
   );
 };
 
-export default Page;
+export default HomePage;
