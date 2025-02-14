@@ -1,5 +1,6 @@
 import { ClerkProvider, SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { db } from '../../lib/db';
+import GetStarted from './components/client/GetStarted';
 
 const HomePage = async () => {
   
@@ -15,7 +16,7 @@ const HomePage = async () => {
         </SignedIn>
         <h1>Welcome to Coach Finder</h1>
         <p>Find the best coach for your needs.</p>
-        <button>Get Started</button>
+        <GetStarted />        
       </div>
     </ClerkProvider>
   );
