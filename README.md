@@ -2,21 +2,6 @@
 
 A platform where powerlifters can find and connect with experienced coaches.
 
-## Features
-
-- 🔍 Search and filter coaches by specialty, experience, price range, and location
-- 👤 Detailed coach profiles with certifications, coaching style, and testimonials
-- 💬 Real-time messaging system for communication
-- 🔐 Secure authentication with Google
-- 📱 Responsive design for all devices
-
-## Tech Stack
-
-- Frontend: Next.js 14, React, TailwindCSS, shadcn/ui, Framer Motion
-- Backend: Next.js API Routes, Prisma ORM
-- Database: PostgreSQL
-- Authentication: NextAuth.js with Google provider
-
 ## Getting Started
 
 1. Clone the repository:
